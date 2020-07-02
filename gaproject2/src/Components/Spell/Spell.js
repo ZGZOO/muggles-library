@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
-function Spells() {
+function Spell(props) {
   const [spells, setSpells] = useState([]);
 
   const apiUrl = "https://www.potterapi.com/v1/";
@@ -18,25 +17,24 @@ function Spells() {
     makeApiCallSpells();
   }, [spellUrl]);
 
-  let displaySpells = <p>loading</p>;
-  if (spells) {
-    displaySpells = spells.map((spell, index) => {
+  let chosenSpell = [];
+  let spellCard = null;
+  if (spells.length !== 0) {
+    chosenSpell = spells.filter((obj, index) => {
+      return obj.spell === props.match.params.spell;
+    });
+    spellCard = chosenSpell.map((obj) => {
       return (
-        <section key={spell._id}>
-          <p>
-            <Link to={"/spells/" + spell.spell}>{spell.spell}</Link>
-          </p>
+        <section key={obj._id}>
+          <p>Spell: {obj.spell}</p>
+          {obj.type === undefined ? <p></p> : <p>Type: {obj.type}</p>}
+          {obj.effect === undefined ? <p></p> : <p>Effect: {obj.effect}</p>}
         </section>
       );
     });
   }
 
-  return (
-    <>
-      <h1>Spells</h1>
-      <div>{displaySpells}</div>
-    </>
-  );
+  return <>{spellCard}</>;
 }
 
-export default Spells;
+export default Spell;

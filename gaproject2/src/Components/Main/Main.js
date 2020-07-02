@@ -5,6 +5,8 @@ import Houses from "../Houses/Houses";
 import Spells from "../Spells/Spells";
 import Home from "../Home/Home";
 import Character from "../Character/Character";
+import House from "../House/House";
+import Spell from "../Spell/Spell";
 
 function Main() {
   return (
@@ -23,8 +25,15 @@ function Main() {
             render={(routerProps) => <Character {...routerProps} />}
           />
           <Route path="/characters" component={Characters} />
-
+          <Route
+            path="/houses/:house"
+            render={(routerProps) => <House {...routerProps} />}
+          />
           <Route path="/houses" component={Houses} />
+          <Route
+            path="/spells/:spell"
+            render={(routerProps) => <Spell {...routerProps} />}
+          />
           <Route path="/spells" component={Spells} />
 
           <Route path="*" render={() => <Redirect to="/home" />} />

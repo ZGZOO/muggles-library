@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 function Character(props) {
-  //   useEffect(() => {
-  //     const character = something;
-  //     const makeApiCall = async () => {
-  //       const res = await fetch(url);
-  //       const json = await res.json();
-  //     };
-  //   }, []);
-
   const apiUrl = "https://www.potterapi.com/v1/";
   const apiKey = `?key=$2a$10$${process.env.REACT_APP_API_KEY}`;
   const characterUrl = apiUrl + "characters" + apiKey;

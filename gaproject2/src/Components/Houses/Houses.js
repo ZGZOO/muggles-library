@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Houses() {
   const [houses, setHouses] = useState([]);
@@ -21,7 +22,9 @@ function Houses() {
     displayHouses = houses.map((house, index) => {
       return (
         <section key={house._id}>
-          <p>{house.name}</p>
+          <p>
+            <Link to={"/houses/" + house.name}>{house.name}</Link>
+          </p>
         </section>
       );
     });
