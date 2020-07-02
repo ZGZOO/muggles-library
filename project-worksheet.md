@@ -70,7 +70,8 @@ Unless otherwise noted, time is listed in hours:
 | --- | :---: |  :---: | :---: | :---: |
 | Total | H | 45 | 44 | 44 |
 
-## Additional Libraries
+## Additional Libraries/Links
+Links: [How to build a great search box](https://medium.com/@samdutton/how-to-build-a-great-search-box-2b9a6d1dce0d)
 
 
 ## Code Snippet
