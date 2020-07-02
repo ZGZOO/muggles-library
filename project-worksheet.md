@@ -80,8 +80,8 @@ Unless otherwise noted, time is listed in hours:
 | --- | :---: |  :---: | :---: | :---: |
 | App | H | 10min | 10min | 10min |
 | Header | H | 15min | 15min | 15min |
-| Footer | H | 5min | 5min | 5min |
-| Main | H | 3hr | 3hr | 3hr |
+| Footer | H | 30min | 30min | 30min |
+| Main | H | 4hr | 4hr | 4hr |
 | Home | H | 3hr | 3hr | 3hr |
 | Characters | H | 2hr | 2hr | 2hr |
 | Character | H | 1hr | 1hr | 1hr |
@@ -89,7 +89,8 @@ Unless otherwise noted, time is listed in hours:
 | House | H | 30min | 30min | 30min |
 | Spells | H | 30min | 30min | 30min |
 | Spell | H | 15min | 15min | 15min |
-| Total | H | 12hr | 12.75hr | 12.75hr |
+| Search bar | H | 3hr | 5hr | 5hr |
+| Total | H | 23hr | 25.75hr | 25.75hr |
 
 ## Additional Libraries/Links
 Links: [How to build a great search box](https://medium.com/@samdutton/how-to-build-a-great-search-box-2b9a6d1dce0d)
