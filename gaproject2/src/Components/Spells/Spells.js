@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./Spells.css";
 
 function Spells() {
   const [spells, setSpells] = useState([]);
@@ -22,20 +23,18 @@ function Spells() {
   if (spells) {
     displaySpells = spells.map((spell, index) => {
       return (
-        <section key={spell._id}>
-          <p>
-            <Link to={"/spells/" + spell.spell}>{spell.spell}</Link>
-          </p>
-        </section>
+        <p key={spell._id} className="spell">
+          <Link to={"/spells/" + spell.spell}>{spell.spell}</Link>
+        </p>
       );
     });
   }
 
   return (
-    <>
+    <div className="spells">
       <h1>Spells</h1>
       <div>{displaySpells}</div>
-    </>
+    </div>
   );
 }
 

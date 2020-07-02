@@ -11,7 +11,7 @@ import "./Main.css";
 
 function Main() {
   return (
-    <div>
+    <div className="main">
       <nav>
         <Link to="/home">Home</Link>
         <Link to="/characters">Characters</Link>

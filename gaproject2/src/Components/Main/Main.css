@@ -1,14 +1,23 @@
+.main {
+  background: #ddc8c4;
+  padding-bottom: 20px;
+}
 nav {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav a {
-  color: gold;
-  border: 1px solid red;
+  color: #eff9f0;
+  /* border: 1px solid red; */
   text-decoration: none;
-  background-color: gray;
+  background-color: #896a67;
   padding: 10px;
-  flex-basis: 100%;
+  margin: 5px;
+  text-align: center;
+  flex-basis: 40%;
+  border-radius: 5px;
 }

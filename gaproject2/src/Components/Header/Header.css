@@ -10,7 +10,8 @@
 
 .header h1 {
   font-family: "Berkshire Swash", cursive;
-  color: rgb(250, 235, 195);
+  /* color: rgb(250, 235, 195); */
+  color: #eff9f0;
 }
 
 .input {
@@ -20,7 +21,7 @@
   border: none;
 }
 .search {
-  background-color: bisque;
+  background-color: #ddc8c4;
   padding: 8px 5px;
   border-radius: 0 10px 10px 0;
   border: none;

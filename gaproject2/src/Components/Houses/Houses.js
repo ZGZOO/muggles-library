@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./Houses.css";
 
 function Houses() {
   const [houses, setHouses] = useState([]);
@@ -21,20 +22,18 @@ function Houses() {
   if (houses) {
     displayHouses = houses.map((house, index) => {
       return (
-        <section key={house._id}>
-          <p>
-            <Link to={"/houses/" + house.name}>{house.name}</Link>
-          </p>
-        </section>
+        <p key={house._id} class="house">
+          <Link to={"/houses/" + house.name}>{house.name}</Link>
+        </p>
       );
     });
   }
 
   return (
-    <>
+    <div className="houses">
       <h1>Houses</h1>
       <div>{displayHouses}</div>
-    </>
+    </div>
   );
 }
 

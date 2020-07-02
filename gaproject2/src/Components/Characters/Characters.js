@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./Characters.css";
 
 function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -25,24 +26,20 @@ function Characters() {
   if (characters) {
     displayCharacters = characters.map((character, index) => {
       return (
-        <section key={character._id}>
-          <p>
-            <Link
-              to={"/characters/" + returnStringWithoutSpace(character.name)}
-            >
-              {character.name}
-            </Link>
-          </p>
-        </section>
+        <p key={character._id} className="person">
+          <Link to={"/characters/" + returnStringWithoutSpace(character.name)}>
+            {character.name}
+          </Link>
+        </p>
       );
     });
   }
 
   return (
-    <>
+    <div className="characters">
       <h1>Characters</h1>
       <div>{displayCharacters}</div>
-    </>
+    </div>
   );
 }
 

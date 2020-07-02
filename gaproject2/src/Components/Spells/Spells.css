@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+
+.spells {
+  text-align: center;
+}
+
+.spell {
+  margin: 15px auto;
+  width: 70%;
+  background-color: #896a67;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.spell a {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #eff9f0;
+  font-size: 20px;
+}
