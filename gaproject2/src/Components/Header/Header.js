@@ -12,22 +12,20 @@ function Header() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setSearch("");
-    // console.log("final search is", search);
+    console.log("final search is", search);
   };
-
-  // const searchIcon = <i class="fas fa-search"></i>;
 
   return (
     <div className="header">
       <h1>Muggles' Library</h1>
-      <form onSubmit={handleSubmit}>
-        {/* drop down button with hat, character, spell */}
+      <form onSubmit={handleSubmit} autoComplete="on">
         <input
-          type="text"
+          type="search"
           value={search}
           onChange={handleSearchChange}
           placeholder="search characters, houses, spells.."
           className="input"
+          autoComplete="on"
         />
         <input type="submit" value="       " className="search" />
       </form>
