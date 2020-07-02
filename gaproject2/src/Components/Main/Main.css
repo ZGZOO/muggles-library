@@ -1,12 +1,14 @@
 nav {
-  border: 1px solid red;
-  padding: 20px 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav a {
   color: gold;
+  border: 1px solid red;
   text-decoration: none;
+  background-color: gray;
+  padding: 10px;
+  flex-basis: 100%;
 }
