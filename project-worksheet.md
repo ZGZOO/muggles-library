@@ -60,13 +60,13 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | Renders the header, including the nav | 
 | Footer | Renders the footer |
 | Main | Contains Switch/Routes for content |
-| Home | Contains Switch/Routes for content |
-| Characters | Contains Switch/Routes for content |
-| Character | Contains Switch/Routes for content |
-| Houses | Contains Switch/Routes for content |
-| House | Contains Switch/Routes for content |
-| Spells | Contains Switch/Routes for content |
-| Spell | Contains Switch/Routes for content |
+| Home | Contains all the info |
+| Characters | Contains all the characters info |
+| Character | Contains the specific character info |
+| Houses | Contains all the houses info |
+| House | Contains the specific house info |
+| Spells | Contains all the spells info |
+| Spell | Contains the specific spell info |
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
@@ -74,7 +74,18 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Total | H | 45 | 44 | 44 |
+| App | H | 10min | 10min | 10min |
+| Header | H | 15min | 15min | 15min |
+| Footer | H | 5min | 5min | 5min |
+| Main | H | 3hr | 3hr | 3hr |
+| Home | H | 3hr | 3hr | 3hr |
+| Characters | H | 2hr | 2hr | 2hr |
+| Character | H | 1hr | 1hr | 1hr |
+| Houses | H | 1hr | 1hr | 1hr |
+| House | H | 30min | 30min | 30min |
+| Spells | H | 30min | 30min | 30min |
+| Spell | H | 15min | 15min | 15min |
+| Total | H | 12hr | 12.75hr | 12.75hr |
 
 ## Additional Libraries/Links
 Links: [How to build a great search box](https://medium.com/@samdutton/how-to-build-a-great-search-box-2b9a6d1dce0d)
