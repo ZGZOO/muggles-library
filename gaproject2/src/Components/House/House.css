@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
-.card {
+
+.houseCard {
   background-image: url("./hat.png");
   opacity: 78%;
   background-size: cover;
   background-position: center;
-  filter: blur(0px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card p {
+.houseCard div p {
   filter: blur(0);
   /* background-color: rgba(0, 0, 0, 0); */
   background-color: rgba(236, 252, 236, 0.6);

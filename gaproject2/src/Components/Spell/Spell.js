@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Spell.css";
 
 function Spell(props) {
   const [spells, setSpells] = useState([]);
@@ -25,16 +26,18 @@ function Spell(props) {
     });
     spellCard = chosenSpell.map((obj) => {
       return (
-        <section key={obj._id}>
-          <p>Spell: {obj.spell}</p>
-          {obj.type === undefined ? <p></p> : <p>Type: {obj.type}</p>}
-          {obj.effect === undefined ? <p></p> : <p>Effect: {obj.effect}</p>}
+        <section key={obj._id} className="spellCard">
+          <div>
+            <p>Spell: {obj.spell}</p>
+            {obj.type === undefined ? <p></p> : <p>Type: {obj.type}</p>}
+            {obj.effect === undefined ? <p></p> : <p>Effect: {obj.effect}</p>}
+          </div>
         </section>
       );
     });
   }
 
-  return <>{spellCard}</>;
+  return <div className="canvas">{spellCard}</div>;
 }
 
 export default Spell;

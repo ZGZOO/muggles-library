@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
-.personCard {
-  background-image: url("./owl.png");
+
+.spellCard {
+  background-image: url("./wand.png");
   opacity: 78%;
   background-size: cover;
   background-position: center;
@@ -10,7 +11,7 @@
   justify-content: center;
 }
 
-.personCard div p {
+.spellCard div p {
   background-color: rgba(236, 252, 236, 0.6);
   font-family: "Cardo", serif;
   font-weight: 700;
