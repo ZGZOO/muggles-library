@@ -35,8 +35,8 @@ https://www.potterapi.com/v1/spells?key=$2a$10$.HOxizQG3kYLYIn.aIdRFuXbB/ic211Qq
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [wireframes]()
-- [react architecture]()
+- [wireframes](https://res.cloudinary.com/headincloud/image/upload/v1593698706/SEI_react_app_wireframes/wireframes%20for%20phone%20and%20laptop.jpg)
+- [react architecture](https://res.cloudinary.com/headincloud/image/upload/v1593699957/SEI_react_app_wireframes/components%20map.jpg)
 
 
 ### MVP/PostMVP - 5min
