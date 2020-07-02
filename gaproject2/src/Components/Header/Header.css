@@ -1,3 +1,7 @@
-header {
+.header {
   border: 1px solid red;
+}
+
+.search {
+  background-color: bisque;
 }

@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [search, setSearch] = useState("");
+
+  const handleSearchChange = (event) => {
+    // console.log(event.target.value);
+    setSearch(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSearch("");
+    // console.log("final search is", search);
+  };
+
+  // const searchIcon = <i class="fas fa-search"></i>;
+
   return (
     <div className="header">
       <h1>Library</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* drop down button with hat, character, spell */}
-        <input type="text" />
-        <input type="submit" />
-        {/* with a symbol */}
+        <input
+          type="text"
+          value={search}
+          onChange={handleSearchChange}
+          placeholder="search characters, houses, spells.."
+        />
+        <input type="submit" value="search" className="search" />
       </form>
     </div>
   );

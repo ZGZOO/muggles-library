@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -16,12 +17,22 @@ function Characters() {
     makeApiCallCharacters();
   }, [characterUrl]);
 
+  const returnStringWithoutSpace = (word) => {
+    return word.split(" ").join("");
+  };
+
   let displayCharacters = <p>loading</p>;
   if (characters) {
     displayCharacters = characters.map((character, index) => {
       return (
         <section key={character._id}>
-          <p>{character.name}</p>
+          <p>
+            <Link
+              to={"/characters/" + returnStringWithoutSpace(character.name)}
+            >
+              {character.name}
+            </Link>
+          </p>
         </section>
       );
     });
