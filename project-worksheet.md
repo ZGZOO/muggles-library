@@ -44,9 +44,13 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
-
+- Find and use external api
+- Render data on page
+- Allow user to click on the info and see the details in another router
 
 #### PostMVP EXAMPLE
+- Allow user to search for any info about characters, houses, spells
+- Search bar has suggestions
 
 
 ## Components
