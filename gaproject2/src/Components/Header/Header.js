@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className="header">
-      <h1>Library</h1>
+      <h1>Muggles' Library</h1>
       <form onSubmit={handleSubmit}>
         {/* drop down button with hat, character, spell */}
         <input
@@ -27,6 +27,7 @@ function Header() {
           value={search}
           onChange={handleSearchChange}
           placeholder="search characters, houses, spells.."
+          className="input"
         />
         <input type="submit" value="search" className="search" />
       </form>
