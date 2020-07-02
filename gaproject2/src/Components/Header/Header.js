@@ -29,7 +29,7 @@ function Header() {
           placeholder="search characters, houses, spells.."
           className="input"
         />
-        <input type="submit" value="search" className="search" />
+        <input type="submit" value="       " className="search" />
       </form>
     </div>
   );

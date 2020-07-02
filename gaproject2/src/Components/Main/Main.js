@@ -7,6 +7,7 @@ import Home from "../Home/Home";
 import Character from "../Character/Character";
 import House from "../House/House";
 import Spell from "../Spell/Spell";
+import "./Main.css";
 
 function Main() {
   return (

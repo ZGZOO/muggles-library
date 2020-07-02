@@ -24,4 +24,8 @@
   padding: 8px 5px;
   border-radius: 0 10px 10px 0;
   border: none;
+  background-image: url("./search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
 }
