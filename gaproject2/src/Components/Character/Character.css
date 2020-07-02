@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+.card {
+  background-image: url("./owl.png");
+  opacity: 78%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px);
+}
+
+.card p {
+  filter: blur(0);
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgba(236, 252, 236, 0.6);
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-size: 20px;
+}

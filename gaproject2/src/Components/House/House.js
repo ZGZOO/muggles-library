@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./House.css";
 
 function House(props) {
   const [houses, setHouses] = useState([]);
@@ -25,7 +26,7 @@ function House(props) {
     console.log("here here here", props.match.params.house);
     houseCard = chosenHouse.map((obj) => {
       return (
-        <section key={obj._id}>
+        <section key={obj._id} className="card">
           <p>Name: {obj.name}</p>
           {obj.mascot === undefined ? <p></p> : <p>Mascot: {obj.mascot}</p>}
           {obj.headOfHouse === undefined ? (
