@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
 
 .spellCard {
-  background-image: url("./wand.png");
+  background-image: url("https://res.cloudinary.com/headincloud/image/upload/v1595635031/wand_o0eagt.png");
   opacity: 78%;
   background-size: cover;
   background-position: center;
