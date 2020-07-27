@@ -2,7 +2,7 @@
 
 .houseCard {
   background-image: url("https://res.cloudinary.com/headincloud/image/upload/v1595635015/hat_xkpxnz.png");
-  opacity: 78%;
+  /* opacity: 78%; */
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -2,7 +2,7 @@
 
 .spellCard {
   background-image: url("https://res.cloudinary.com/headincloud/image/upload/v1595635031/wand_o0eagt.png");
-  opacity: 78%;
+  /* opacity: 78%; */
   background-size: cover;
   background-position: center;
   height: 100vh;
