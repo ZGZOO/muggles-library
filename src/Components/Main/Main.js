@@ -20,6 +20,7 @@ function Main() {
       </nav>
       <section>
         <Switch>
+          <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
           <Route
             path="/characters/:name"
@@ -37,7 +38,7 @@ function Main() {
           />
           <Route path="/spells" component={Spells} />
 
-          <Route path="*" render={() => <Redirect to="/home" />} />
+          <Route path="*" render={() => <Redirect to="/" />} />
         </Switch>
       </section>
     </div>
