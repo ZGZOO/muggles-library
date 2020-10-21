@@ -6,11 +6,7 @@ function Characters() {
   const [characters, setCharacters] = useState([]);
 
   const apiUrl = "https://www.potterapi.com/v1/";
-  // const apiKey = `${process.env.REACT_APP_API_KEY}`;
   const characterUrl = `${apiUrl}characters?key=$2a$10$${process.env.REACT_APP_API_KEY}`;
-  // const characterUrl = apiUrl + "characters" + "?key=$2a$10$" + apiKey;
-  // console.log("API: ", apiKey);
-  console.log("API: ", process.env.REACT_APP_API_KEY);
 
   useEffect(() => {
     const makeApiCallCharacters = async () => {
