@@ -18,13 +18,11 @@ function Houses() {
     makeApiCallHouses();
   }, [houseUrl]);
 
-  console.log(process.env.REACT_APP_API_KEY);
-
   let displayHouses = <p>loading</p>;
   if (houses) {
     displayHouses = houses.map((house, index) => {
       return (
-        <p key={house._id} class="house">
+        <p key={house._id} className="house">
           <Link to={"/houses/" + house.name}>{house.name}</Link>
         </p>
       );
